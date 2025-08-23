@@ -16,9 +16,7 @@ body {
     background-color: #002525;
 }
 
-.logo{
-    width: 2.9em;
-}
+
 
 
 .content-wrapper {
@@ -51,7 +49,7 @@ body {
     position: fixed;
     flex-direction: column;
     left: 5px;
-    top: 60%;
+    top: 50vh;
     justify-content: center;
     align-items: center;
     gap: 20px;
