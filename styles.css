@@ -9,15 +9,13 @@ html {
     height: 100vw;
 }
 body {
-    height: 1500px;
-    background-image: url('background.jpg');
+    background-image: url('background2.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: #002525;
 }
-
-
-
 
 .content-wrapper {
     display: flex;
@@ -29,6 +27,7 @@ body {
     background-color: rgba(0, 0, 0, 0.096);
     border-radius: 40px;
 }
+
 
 #main-text {
     font-size: 3em;
@@ -44,6 +43,8 @@ body {
     margin: 40px 0;
     background-color: #04737700;
 }
+
+
 .social-media-wrapper {
     display: flex;
     position: fixed;
