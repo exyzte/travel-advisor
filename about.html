@@ -21,6 +21,16 @@
                 <li><div class="icon"><i class="fa-brands fa-youtube"></i></div></li>
             </ul>
         </div>
+        <div class="team">
+            <h2>Our Team</h2>
+            <ul>
+                <i class="fa-solid fa-user-tie"></i><li><strong>John Doe</strong> - <div class="role-wrapper"><input type="checkbox" id="ch"><p class="hidden-textarea">John started as an IBM full-stack... <div class="hidden-content">developer and has created several businesses throughout his career allowing him to create TA in 2025.<label for="ch" class="show-class">...Show Less</label></div></p><label class="show-class" for="ch">...Read More</label></div><div id="role">Founder & CEO</div></li>
+                <i class="fa-solid fa-user-tie"></i><li><strong>Jane Smith</strong> - <div class="role-wrapper"><input type="checkbox" id="ch2"><p class="hidden-textarea">Jane is in charge of designing... <div class="hidden-content">marketing campaigns for our business pool, mantaining dynamic & innovative strategies.<label for="ch2" class="show-class">...Show Less</label></div></p><label class="show-class" for="ch2">...Read More</label></div><div class="role">Head of Marketing</div></li>
+                <i class="fa-solid fa-user-tie"></i><li><strong>Emily Johnson</strong> - <div class="role">Travel Specialist</div></li>
+                <i class="fa-solid fa-user-tie"></i><li><strong>David Cicery</strong> - <div class="role">Sofware Engineer</div></li>
+                
+            </ul>
+        </div>
         <style>
             *{
              margin: 0;
@@ -36,16 +46,7 @@
                 background-attachment: fixed;
                 background-color: #002525;
 }
-            .content-wrapper {
-                display: flex;
-                flex-direction: column;
-                width: 45%;
-                margin: 13em;
-                align-items: left;
-                padding: 20px;
-                background-color: rgba(0, 0, 0, 0.068);
-                border-radius: 40px;
-}
+            
             .body-color {
                 height: 100%;
                 display: flex;
@@ -53,11 +54,63 @@
                 align-items: center;
                 justify-content: center;
             }
+            .content-wrapper {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                margin-top: 10em;
+                align-items: left;
+                padding: 20px;
+                background-color: rgba(0, 0, 0, 0.068);
+                border-radius: 40px;
+}
+            .team {
+                margin-top: 20px;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.267);
+                border: solid 1px #0c8e97;
+                border-radius: 20px;
+                width: 100%;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                height: 15em;
+                color: white;
+            }
+            .team h2 {
+                color: #ffffff;
+                font-size: 2em;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 200px;
+
+            }
+            .team ul {
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0;
+            }
+            .team ul li {
+                margin: 0px;
+            }
             #main-text {
                 font-size: 3em;
                 color: white;
                 background-color: #0c8e9700;
+            }
 
+            .role-wrapper {
+                width: 180px;
+                background-color: #ffffff27;
+                font-size: 0.7em;
             }
 
             #main-paragraph {
@@ -89,6 +142,53 @@
                 color: #024d4d;
                 font-size: 1.3em;
 }
+            #ch {
+                display: none;
+            }
+
+            #ch:checked ~ .hidden-content {
+                display: block;
+                width: 70%;
+            }
+
+            #ch:checked ~ label {
+                display: none;
+            }
+
+
+            #ch2 {
+                display: none;
+            }
+
+            #ch2:checked ~ .hidden-content {
+                display: block;
+                width: 70%;
+            }
+
+            #ch2:checked ~ label {
+                display: none;
+            }
+
+            .show-class {
+                display: inline-block;
+                cursor: pointer;
+                color: #bee1e4;
+                margin-top: 5px;
+            }
+            .hidden-content {
+                display: none;
+                width: 70%;
+            }
+
+            .hidden-textarea {
+                
+                width: 70%;
+                height: 100%;
+                color: #ffffff;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
             .icon {
                 font-size: 1.4em;
                 width: 3em;
