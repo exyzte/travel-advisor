@@ -24,11 +24,10 @@
         <div class="team">
             <h2>Our Team</h2>
             <ul>
-                <i class="fa-solid fa-user-tie"></i><li><strong>John Doe</strong> - <div class="role-wrapper"><input type="checkbox" id="ch"><p class="hidden-textarea">John started as an IBM full-stack... <div class="hidden-content">developer and has created several businesses throughout his career allowing him to create TA in 2025.<label for="ch" class="show-class">...Show Less</label></div></p><label class="show-class" for="ch">...Read More</label></div><div id="role">Founder & CEO</div></li>
-                <i class="fa-solid fa-user-tie"></i><li><strong>Jane Smith</strong> - <div class="role-wrapper"><input type="checkbox" id="ch2"><p class="hidden-textarea">Jane is in charge of designing... <div class="hidden-content">marketing campaigns for our business pool, mantaining dynamic & innovative strategies.<label for="ch2" class="show-class">...Show Less</label></div></p><label class="show-class" for="ch2">...Read More</label></div><div class="role">Head of Marketing</div></li>
-                <i class="fa-solid fa-user-tie"></i><li><strong>Emily Johnson</strong> - <div class="role">Travel Specialist</div></li>
-                <i class="fa-solid fa-user-tie"></i><li><strong>David Cicery</strong> - <div class="role">Sofware Engineer</div></li>
-                
+                <i class="fa-solid fa-user-tie"></i><li><strong>John Doe</strong> - <div class="role-wrapper"><input type="checkbox" id="ch"><p class="hidden-textarea">John started as an IBM full-stack<div class="hidden-content">developer and has created several businesses throughout his career allowing him to create TA in 2025.<label for="ch" class="show-class">...Show Less</label></div></p><label class="show-class" for="ch">...Read More</label></div><div class="role">Founder & CEO</div></li>
+                <i class="fa-solid fa-user-tie"></i><li><strong>Jane Smith</strong> - <div class="role-wrapper"><input type="checkbox" id="ch2"><p class="hidden-textarea">Jane is in charge of designing marketing <div class="hidden-content">campaings for our business pool, mantaining dynamic & innovative strategies.<label for="ch2" class="show-class">...Show Less</label></div></p><label class="show-class" for="ch2">...Read More</label></div><div class="role">Head of Marketing</div></li>
+                <i class="fa-solid fa-user-tie"></i><li><strong>Emily Johnson</strong> - <div class="role-wrapper"><input type="checkbox" id="ch3"><p class="hidden-textarea">Emily Johnson has worked in discovering the best<div class="hidden-content">destinations and travel activities across the world by reaching out to our stakeholders in multiple markets and experimenting herself.<label for="ch3" class="show-class">...Show Less</label></div></p><label class="show-class" for="ch3">...Read More</label></div><div class="role">Travel Specialist</div></li>
+                <i class="fa-solid fa-user-tie"></i><li><strong>David Cicery</strong> - <div class="role-wrapper"><input type="checkbox" id="ch4"><p class="hidden-textarea">David has worked in developing most of our<div class="hidden-content">company pool's software leading a team of developers to deliver high quality and integral front and back-end.<label for="ch4" class="show-class">...Show Less</label></div></p><label class="show-class" for="ch4">...Read More</label></div><div class="role">Sofware Engineer</div></li>
             </ul>
         </div>
         <style>
@@ -67,36 +66,40 @@
             .team {
                 margin-top: 20px;
                 padding: 20px;
-                background-color: rgba(255, 255, 255, 0.267);
-                border: solid 1px #0c8e97;
+                background-color: rgba(148, 133, 133, 0.267);
                 border-radius: 20px;
-                width: 100%;
+                min-width: 60%;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
                 align-items: center;
-                flex-wrap: wrap;
-                height: 15em;
+                height: 25em;
                 color: white;
             }
+
             .team h2 {
                 color: #ffffff;
-                font-size: 2em;
-                text-align: center;
+                font-size: 1.5em;
+                text-align: start;
+                margin-right: 10px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                max-width: 200px;
-
+                max-width: 100px;
             }
+
             .team ul {
                 list-style-type: none;
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: space-between;
+                gap: 25px;;
                 align-items: center;
                 padding: 0;
+            }
+
+            .team il i{
+                top: 0;
+                margin: 0;
             }
             .team ul li {
                 margin: 0px;
@@ -108,9 +111,11 @@
             }
 
             .role-wrapper {
-                width: 180px;
+                width: 250px;
                 background-color: #ffffff27;
-                font-size: 0.7em;
+                font-size: 0.9em;
+                padding: 0;
+                margin: 0;
             }
 
             #main-paragraph {
@@ -147,8 +152,8 @@
             }
 
             #ch:checked ~ .hidden-content {
-                display: block;
-                width: 70%;
+                max-height: 250px;
+                opacity: 1;
             }
 
             #ch:checked ~ label {
@@ -161,33 +166,74 @@
             }
 
             #ch2:checked ~ .hidden-content {
-                display: block;
-                width: 70%;
+                max-height: 250px;
+                opacity: 1;
             }
 
             #ch2:checked ~ label {
                 display: none;
             }
 
+            #ch3 {
+                display: none;
+            }
+
+            #ch3:checked ~ .hidden-content {
+                max-height: 250px;
+                opacity: 1;
+            }
+
+            #ch3:checked ~ label {
+                display: none;
+            }
+
+            #ch4 {
+                display: none;
+            }
+
+            #ch4:checked ~ .hidden-content {
+                max-height: 250px;
+                opacity: 1;
+            }
+
+            #ch4:checked ~ label {
+                display: none;
+            }
+
             .show-class {
                 display: inline-block;
                 cursor: pointer;
-                color: #bee1e4;
+                color: #ffffff;
                 margin-top: 5px;
-            }
-            .hidden-content {
-                display: none;
-                width: 70%;
             }
 
             .hidden-textarea {
-                
-                width: 70%;
+                width: 100%;
                 height: 100%;
                 color: #ffffff;
-                padding: 10px;
+                padding: 5px;
                 border-radius: 5px;
+                margin: 0;
             }
+
+            .hidden-content {
+                width: 100%;
+                max-height: 0;
+                overflow: hidden;
+                opacity: 0;
+                transition: all 0.4s ease;
+                padding: 5px;
+                margin: 0;
+            }
+            .role {
+                font-weight: bold;
+                color: #ffffff;
+                margin-top: 5px;
+                font-size: 1.2em;
+                background-color: #04737786;
+                border-radius: 15px;
+            }
+            
 
             .icon {
                 font-size: 1.4em;
